@@ -1,6 +1,6 @@
 namespace OpenClosedExample
 {
-	public class HouseCalculator : IAccomodationsFareConditions
+	public class HouseCalculator : IAccomodationsFareCalculator
 	{
 		public double Calculate()
 		{
