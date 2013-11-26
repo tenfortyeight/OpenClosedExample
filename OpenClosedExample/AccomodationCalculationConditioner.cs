@@ -5,11 +5,11 @@ namespace OpenClosedExample
 {
 	public class AccomodationCalculationConditioner
 	{
-		private readonly Dictionary<string, IAccomodationsFareConditions> _conditions;
+		private readonly Dictionary<string, IAccomodationsFareCalculation> _conditions;
 
 		public AccomodationCalculationConditioner()
 		{
-			_conditions = new Dictionary<string, IAccomodationsFareConditions>
+			_conditions = new Dictionary<string, IAccomodationsFareCalculation>
 				{
 					{"apartment", new ApartmentCalculator()},
 					{"house", new HouseCalculator()},
@@ -17,7 +17,7 @@ namespace OpenClosedExample
 				};
 		}
 
-		public IAccomodationsFareConditions GetCalculationConditionForType(string accomodationType)
+		public IAccomodationsFareCalculation GetCalculationConditionForType(string accomodationType)
 		{
 			if (_conditions.ContainsKey(accomodationType))
 			{
