@@ -1,6 +1,6 @@
 namespace OpenClosedExample
 {
-	public interface IAccomodationsFareConditions
+	public interface IAccomodationsFareCalculator
 	{
 		double Calculate();
 	}
