@@ -1,6 +1,6 @@
 A SOLID example
 ===============
 
-Write up available at http://www.xanthene.com
+Write up available at http://www.xanthene.com/?p=999
 
 This example illustrates what a solution might look like when going from a nasty switch-statement or a large if-block, and initially focusing primarily on the Open-Closed principle.
